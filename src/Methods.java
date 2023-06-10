@@ -1,7 +1,6 @@
-import java.security.PublicKey;
 
 public class Methods {
-    private String middleName = "Yogi";
+    private final String  middleName = "Yogi";
     public  static double PI = 3.14;
     public static int[] nums = initNums();
 

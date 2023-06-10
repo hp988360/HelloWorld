@@ -13,6 +13,10 @@ public class Person {
 
     String person = "String";
 
+    private Person() {
+
+    }
+
     public void sayHello() {
         System.out.println("Hello");
     }
@@ -39,9 +43,7 @@ public class Person {
 
     }
 
-    public Person() {
 
-    }
 
     public Person(String firstName, String lastName, LocalDate dob) {
 
@@ -53,7 +55,7 @@ public class Person {
 
 
     public static void main(String[] args) {
-        Person p1 = new Person();
+        Person p1 = new Person("Poopy","Butt",LocalDate.of(6,9,6969));
         p1.firstName = "Jacob";
         p1.lastName = "Smith";
         p1.sayHello();
