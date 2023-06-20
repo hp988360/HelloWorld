@@ -6,7 +6,7 @@ public class Person {
 
     public boolean multiply;
     private String middleName = "Yogi";
-    private String firstName;
+    private String firstName; // johnny
     public String lastName;
     protected LocalDate dob;
 
@@ -62,6 +62,38 @@ public class Person {
         p1.saySomething("My Groovy Message!");
         p1.add(2,4);
         p1.multiply(5,9);
+    }
+
+    public String getMiddleName() {
+        return middleName;
+    }
+
+    public String getFirstName() {
+        return firstName.substring(0,1).toUpperCase() + firstName.substring(1); //  0-1 means that it only grabs the first letter and uppercases then adds the rest of the string.
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public LocalDate getDob() {
+        return dob;
+    }
+
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName.substring(0,1).toUpperCase() + lastName.substring(1);
+    }
+
+    public void setDob(LocalDate dob) {
+        this.dob = dob;
     }
 
     public void test2(int num1, int num2, String... words) {

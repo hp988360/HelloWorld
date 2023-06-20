@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 
 public class Methods {
     private final String  middleName = "Yogi";
@@ -49,7 +50,7 @@ public class Methods {
         return Math.multiplyExact(int3, int4);
     }
     public static void main(String[] args) {
-        Person p1 = new Person();
+        Person p1 = new Person("Hi","Hello", LocalDate.of(5,5,0005));
         p1.sayHello();
         p1.saySomething("What's Up");
         System.out.println(p1.getMiddleInitial());
